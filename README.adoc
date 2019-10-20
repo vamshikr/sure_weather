@@ -5,7 +5,7 @@ A REST API to get current temperature for a given a location specified as (`lati
 ### Setup
 Follow these steps to setup the application
 
-#### Clone and Start mock-weather-api Helper Application that emulates **NOAA**, **Weather.com** and **Accuweather**.
+#### Clone and start mock-weather-api Helper Application that emulates **NOAA**, **Weather.com** and **Accuweather**.
 ```
 git clone https://github.com/shipwell/mock-weather-api.git && \
   cd mock-weather-api && \
@@ -14,7 +14,8 @@ git clone https://github.com/shipwell/mock-weather-api.git && \
 
 #### In a seperate directory, clone the `sure_weather` repository
 ```
-git clone <url> && cd
+git clone https://github.com/vamshikr/sure_weather.git && \
+cd sure_weather
 ```
 
 #### Create a virtual environment
