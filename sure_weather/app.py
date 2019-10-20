@@ -46,7 +46,10 @@ async def init_app() -> web.Application:
     # Checking if maps can be used for validation and zipcode lookup
     google_maps_key = os.environ.get('GOOGLE_MAPS_APIKEY', None)
     if google_maps_key:
+        logging.error("Google Maps available")
         app['google_maps'] = google_maps.GoogleMaps(google_maps_key)
+    else:
+        logging.error("Google Maps NOT available")
 
     # Adding routes
     add_routes(app)
