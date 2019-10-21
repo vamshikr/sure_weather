@@ -1,6 +1,6 @@
 
 ## Sure Weather
-A REST API to get current temperature for a given a location specified as (`latitude` and `longitude`) pair or a `zipcode`. The API relies upon externel weather services such as **NOAA**, **Weather.com** and **Accuweather**.
+A REST API to get current temperature for a given a location specified as (`latitude` and `longitude`) pair or a `zipcode`. The API relies upon externel weather services such as **NOAA**, **Weather.com** and **Accuweather**. https://aiohttp.readthedocs.io/en/stable/[aiohttp] is used to build this application.
 
 ### Setup
 Follow these steps to setup the application
