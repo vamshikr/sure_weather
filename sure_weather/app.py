@@ -3,7 +3,6 @@ import logging
 import os
 import sys
 
-import uvloop
 from aiohttp import web
 
 from sure_weather.helper import google_maps
@@ -29,10 +28,6 @@ async def init_app() -> web.Application:
     :return web.Application object
     """
     init_logger(os.environ.get('LOGGING_LEVEL', logging.INFO))
-
-    # Using uvloop for better performance
-    event_loop = uvloop.new_event_loop()
-    asyncio.set_event_loop(event_loop)
 
     app = web.Application()
 
