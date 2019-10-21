@@ -9,6 +9,9 @@ Follow these steps to setup the application
 ```
 git clone https://github.com/shipwell/mock-weather-api.git && \
   cd mock-weather-api && \
+  python3 -m venv venv && \
+  source venv/bin/activate && \
+  pip3 install -r requirements.txt && \
   FLASK_APP=app.py FLASK_DEBUG=1 flask run
 ```
 
